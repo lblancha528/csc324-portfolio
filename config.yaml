@@ -1,31 +1,30 @@
 baseURL: https://lblancha528.github.io/csc324-portfolio/
 locale: en-us
-build:
-  writeStats: true
-security:
-  exec:
-    allow: ['^(dart-)?sass$', '^go$', '^git$', '^node$', '^postcss$', '^tailwindcss$']
 title: My Portfolio
+theme: archie
+copyright: ""
+
 pagination:
   pagerSize: 20
-# Uncomment below to use aafu as hugo theme. See instructions in README.md
-theme: aafu
 
 params:
-  author: Darshan Baral
-  description: Website title
-  copyright: powered by [hugo](https://gohugo.io/)
-  theme:
-    mainTheme: dark
-    showAttribute: true
-    singlePage: false
-  accordion:
-    - item: about_me
-      expand: true # only the first `expand: true` will take effect
-    - item: experiences
-    - item: education
-    - item: publications
-    - item: projects
-    - item: skills
-      panel_id: skill-panel
-    - item: hobbies
+  mode: toggle          # light, dark, toggle, or auto
+  useCDN: false
+  subtitle: ""          # one-line description shown on the home page
+  mainSections: [competencies]
+  customcss: [css/custom.css]
+
+menu:
+  main:
+    - name: Home
+      url: /
+      weight: 1
+    - name: Competencies
+      url: /competencies/
+      weight: 2
+    - name: About
+      url: /about/
+      weight: 3
+    - name: Search
+      url: /search/
+      weight: 4

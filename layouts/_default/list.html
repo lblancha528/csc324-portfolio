@@ -1,32 +1,17 @@
 {{ define "main" }}
-<div>
-  <h1 class="standard font-bold {{ if eq .Kind `term` }}font-italic{{ end }}">
-    {{ if eq .Kind "term" }}#{{ .Data.Term }}{{ else }}{{- .Title -}}{{ end }}
-  </h1>
+{{ if isset .Data "Term" }}
+<h1>Entries tagged - "{{ .Data.Term }}"</h1>
+{{ else }}
+<h1 class="page-title">{{ .Title }}</h1>
+{{ end }}
 
-  {{ range $key, $val := (.Paginator 20).Pages }}
-  <div
-    class="rounded-sm hover:bg-gray-400 dark:hover:bg-darker flex flex-row items-center justify-start accordion mt-4 mb-0 p-2 {{ if eq $key 0 }}active{{ end }}"
-  >
-    <i
-      onclick="expandAccordion(this)"
-      class="cursor-pointer chevron p-2 mr-4 bi bi-caret-right rounded-sm text-blue-500 dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-gray-700"
-    ></i>
-    <a href="{{ .Permalink | relURL }}"
-      ><h2 class="accordion m-0 font-bold">{{- .Title -}}</h2></a
-    >
-  </div>
-  <div
-    id="panel-item-{{ $key }}"
-    class="panel metadata-panel overflow-hidden bg-gray-200 dark:bg-dark"
-  >
-    <div class="metadata p-2">{{- partial "metadata" . -}}</div>
-  </div>
-
-  {{ end }}
-</div>
-
-<div class="my-6 flex justify-center pagination-links">
-  {{ template "_internal/pagination.html" (dict "page" . "format" "terse") }}
-</div>
+<ul class="posts">
+	{{- range .Data.Pages -}}
+		{{- if (not (in (.Site.Params.excludedTypes | default (slice "page")) .Type)) -}}
+		<li class="post">
+			<a href="{{ .RelPermalink }}">{{.Title}}</a> <span class="meta">{{ dateFormat ":date_medium" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</span>
+		</li>
+		{{- end -}}
+	{{- end -}}
+</ul>
 {{ end }}
