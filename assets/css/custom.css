@@ -1,6 +1,6 @@
 /* Overrides for the Archie theme. Loaded after the theme's own CSS. */
 :root {
   /* Accent color for links, headings, and highlights (light mode). */
-  --color-primary: #dc143c;
-  --color-primary-hover: #b91c3c;
+  --color-primary: #E1AD01;
+  --color-primary-hover: #E1AD01;
 }

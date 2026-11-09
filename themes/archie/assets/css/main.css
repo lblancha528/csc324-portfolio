@@ -1,8 +1,8 @@
 /* CSS Custom Properties */
 :root {
   /* Light theme colors */
-  --color-primary: #dc143c;
-  --color-primary-hover: #b91c3c;
+  --color-primary: #E1AD01;
+  --color-primary-hover: #E1AD01;
   --color-border: #663399;
   --color-callout: #1e90ff;
   --color-text: #232333;
@@ -15,8 +15,8 @@
   --color-background-draft: #f9f2f4;
   
   /* Dark theme colors */
-  --color-primary-dark: #50fa7b;
-  --color-primary-hover-dark: #3dd458;
+  --color-primary-dark: #E1AD01;
+  --color-primary-hover-dark: #E1AD01;
   --color-border-dark: #0066ff;
   --color-text-dark: #ffffff;
   --color-text-muted-dark: #dddddd;

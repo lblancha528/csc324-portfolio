@@ -5,13 +5,13 @@ body {
 }
 
 ::-moz-selection {
-  background: var(--color-primary-dark, #50fa7b);
+  background: var(--color-primary-dark, #E1AD01);
   color: #000000;
   text-shadow: none;
 }
 
 ::selection {
-  background: var(--color-primary-dark, #50fa7b);
+  background: var(--color-primary-dark, #E1AD01);
   color: #000000;
   text-shadow: none;
 }
@@ -45,12 +45,12 @@ h6 {
   color: var(--color-text-muted-dark, #dddddd);
 }
 
-h1::before { color: var(--color-primary-dark, #50fa7b); }
-h2::before { color: var(--color-primary-dark, #50fa7b); }
-h3::before { color: var(--color-primary-dark, #50fa7b); }
-h4::before { color: var(--color-primary-dark, #50fa7b); }
-h5::before { color: var(--color-primary-dark, #50fa7b); }
-h6::before { color: var(--color-primary-dark, #50fa7b); }
+h1::before { color: var(--color-primary-dark, #E1AD01); }
+h2::before { color: var(--color-primary-dark, #E1AD01); }
+h3::before { color: var(--color-primary-dark, #E1AD01); }
+h4::before { color: var(--color-primary-dark, #E1AD01); }
+h5::before { color: var(--color-primary-dark, #E1AD01); }
+h6::before { color: var(--color-primary-dark, #E1AD01); }
 
 .toc {
   background-color: var(--color-background-toc-dark, #272822);
@@ -60,15 +60,15 @@ h6::before { color: var(--color-primary-dark, #50fa7b); }
 
 /* Links */
 a {
-  border-block-end: 3px solid var(--color-primary-dark, #50fa7b);
+  border-block-end: 3px solid var(--color-primary-dark, #E1AD01);
   color: inherit;
 }
 
 a:hover,
 a:focus {
-  background-color: var(--color-primary-dark, #50fa7b);
+  background-color: var(--color-primary-dark, #E1AD01);
   color: #000000;
-  outline-color: var(--color-primary-dark, #50fa7b);
+  outline-color: var(--color-primary-dark, #E1AD01);
 }
 
 .site-description a {
@@ -82,12 +82,12 @@ a:focus {
 
 /* Tags */
 .tags a {
-  border-block-end: 3px solid var(--color-primary-dark, #50fa7b);
+  border-block-end: 3px solid var(--color-primary-dark, #E1AD01);
 }
 
 .tags a:hover,
 .tags a:focus {
-  background-color: var(--color-primary-dark, #50fa7b);
+  background-color: var(--color-primary-dark, #E1AD01);
   color: #000000;
 }
 
@@ -108,7 +108,7 @@ footer {
 .soc:hover,
 .soc:focus {
   color: #000000;
-  outline-color: var(--color-primary-dark, #50fa7b);
+  outline-color: var(--color-primary-dark, #E1AD01);
 }
 
 .draft-label {
@@ -139,9 +139,9 @@ table tr:nth-child(even) {
 
 .nav-toggle:hover,
 .nav-toggle:focus {
-  background-color: var(--color-primary-dark, #50fa7b);
+  background-color: var(--color-primary-dark, #E1AD01);
   color: #000000;
-  outline-color: var(--color-primary-dark, #50fa7b);
+  outline-color: var(--color-primary-dark, #E1AD01);
 }
 /* Language badges inherit from main.css - no duplicates needed */
 
@@ -188,7 +188,7 @@ kbd {
 }
 
 .search-input:focus {
-  outline-color: var(--color-primary-dark, #50fa7b);
+  outline-color: var(--color-primary-dark, #E1AD01);
 }
 
 .search-status-error {
@@ -196,5 +196,5 @@ kbd {
 }
 
 .search-tag {
-  border-color: var(--color-primary-dark, #50fa7b);
+  border-color: var(--color-primary-dark, #E1AD01);
 }
