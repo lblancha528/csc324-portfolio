@@ -1,0 +1,9 @@
+{{- /* Private working notes. Rendered only by `hugo server` (development),
+       never in the production build that deploys to GitHub Pages. */ -}}
+{{- if hugo.IsDevelopment -}}
+<aside class="working-notes">
+  <p class="working-notes-label">📝 Notes: only visible in local preview, hidden on the live site</p>
+  {{ .Inner | .Page.RenderString }}
+  <p class="working-notes-footer">You may cite Claude-written code (and must cite it). All prose has to be your own writing.</p>
+</aside>
+{{- end -}}

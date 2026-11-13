@@ -4,3 +4,14 @@
   --color-primary: #E1AD01;
   --color-primary-hover: #E1AD01;
 }
+
+/* Private working notes box (see layouts/shortcodes/notes.html). */
+.working-notes {
+  border: 2px dashed #E1AD01;
+  background: rgba(225, 173, 1, 0.08);
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  margin: 1em 0 2em;
+}
+.working-notes-label { font-weight: bold; margin-top: 0.5em; }
+.working-notes-footer { font-size: 0.9em; opacity: 0.8; }

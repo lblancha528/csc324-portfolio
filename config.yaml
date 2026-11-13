@@ -10,7 +10,7 @@ pagination:
 params:
   mode: toggle          # light, dark, toggle, or auto
   useCDN: false
-  subtitle: "Where I describe how to work I've done on GrinnSkill demonstrates my competency in major design areas"          # one-line description shown on the home page
+  subtitle: "Where I describe how the work I've done on GrinnSkill demonstrates my competency in major design areas"          # one-line description shown on the home page
   mainSections: [competencies]
   customcss: [css/custom.css]
 
